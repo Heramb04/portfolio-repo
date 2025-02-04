@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heramb's Portfolio</title>
+    <style>
+        body {
+            
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #0d0d0d; /* Dark background */
+            color: #fff; /* Light text for contrast */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 2rem;
+            background: #1a1a1a; /* Slightly lighter dark background */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,255,255,0.5); /* Neon cyan shadow */
+        }
+        header {
+            background: #1a1a1a; /* Slightly lighter dark background */
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        header img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 20px;
+            border: 2px solid #fff;
+            object-fit: cover;
+        }
+        nav {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+        nav a {
+            color: #0ff; /* Neon cyan */
+            margin: 0 1rem;
+            text-decoration: none;
+        }
+        section {
+            margin: 2rem 0;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        h3, .section-heading {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        h2::before, h3::before, .section-heading::before {
+            content: "";
+            position: absolute;
+            top: -1.5rem; /* Moved the line above the heading */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #ff00cc, #3333ff);
+            box-shadow: 0 0 10px #ff00cc;
+        }
+        /* Remove lines under specific headings */
+        #about h2::before, #portfolio h2::before {
+            display: none;
+        }
+        /* Remove glowy lines above language names */
+        .language-box h3::before {
+            display: none;
+        }
+        .language-box h3::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #ff00cc, #3333ff);
+            box-shadow: 0 0 10px #ff00cc;
+            margin-top: 0.5rem; /* Adjust space between text and underline */
+        }
+        p {
+            margin: 1rem 0;
+        }
+        .languages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .language-box {
+            background: #333;
+            color: #fff;
+            border-radius: 15px;
+            width: 180px;
+            height: 180px;
+            padding: 1rem;
+            margin: 1rem;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: background-color 0.3s ease;
+        }
+        .language-box:hover {
+            background-color: #444;
+        }
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+        }
+        .portfolio-box {
+            background: #333;
+            border-radius: 15px;
+            width: 180px;
+            height: 180px;
+            margin: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            text-align: center;
+            color: #fff;
+        }
+        .portfolio-box:hover {
+            background-color: #444;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #fff;
+            background-color: #ff00ff; /* Neon magenta */
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #ff00cc; /* Slightly lighter neon magenta */
+        }
+        footer {
+            background: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Heramb Joshi</h1>
+        <img src="IMG_20250114_114026_661.jpg" alt="Heramb Joshi's Photo">
+    </header>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <h3 class="section-heading">Introduction to Cloud Computing</h3>
+            <p>Hello! I'm Heramb Joshi, a passionate coder and a cloud computing enthusiast. I love exploring new technologies and finding innovative solutions to complex problems. My journey in the tech world has been exciting and full of learning experiences. I'm always eager to collaborate on projects and share my knowledge with others.</p>
+            <p><strong>Introduction to Cloud Computing:</strong> Cloud computing has revolutionized the way we store, process, and manage data. My introduction to this field opened up a world of possibilities for scalable and efficient solutions. I have experience working with various cloud platforms, and I'm constantly learning about new services and capabilities that can drive innovation and efficiency in projects.</p>
+            <h3 class="section-heading">Passion for Coding</h3>
+            <p>Coding has always been a passion of mine. Whether it's solving complex problems or creating innovative solutions, I find joy in every line of code I write. My journey in programming began with simple scripts and has evolved into developing sophisticated applications and systems.</p>
+        </section>
+        <section id="portfolio">
+            <h2>Portfolio Overview</h2>
+            <h3 class="section-heading">Achievements Highlights</h3>
+            <p>Throughout my career, I have achieved numerous milestones that showcase my skills and dedication. From successfully completing challenging projects to receiving accolades for my work, these highlights reflect my commitment to excellence.</p>
+            <h3 class="section-heading">Coding Skills Showcase</h3>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    Portfolio Website
+                </div>
+            </div>
+            <h3 class="section-heading">Future Aspirations</h3>
+            <p>As I continue to grow in my career, I have several aspirations for the future. I aim to take on more leadership roles, drive innovative projects, and continue expanding my knowledge in emerging technologies. My goal is to make a significant impact in the tech industry and contribute to its advancement.</p>
+        </section>
+        <section id="learning-pathways">
+            <h2>Learning Pathways</h2>
+            <div class="languages">
+                <div class="language-box">
+                    <h3>C++</h3>
+                    <p>C++ is a powerful, high-performance language used for system/software development and game programming.</p>
+                </div>
+                <div class="language-box">
+                    <h3>Java</h3>
+                    <p>Java is versatile and widely used for building platform-independent applications.</p>
+                </div>
+                <div class="language-box">
+                    <h3>HTML</h3>
+                    <p>HTML forms the structure of web pages and is essential for web development.</p>
+                </div>
+                <div class="language-box">
+                    <h3>CSS</h3>
+                    <p>CSS styles and layouts web pages, making them visually appealing.</p>
+                </div>
+                <div class="language-box">
+                    <h3>JavaScript</h3>
+                    <p>JavaScript adds interactivity and functionality to web pages.</p>
+                </div>
+                <div class="language-box">
+                    <h3>Python</h3>
+                    <p>Python is versatile and great for web development, data analysis, AI, and more.</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Let's get in touch!</h2>
+            <a href="www.linkedin.com/in/heramb-joshi-459367286" class="button">Connect via LinkedIn</a>
+            <a href="https://github.com/heramb04" class="button">Explore GitHub</a>
+            <p>Feel free to reach out to me through LinkedIn or explore my GitHub</p
+            
